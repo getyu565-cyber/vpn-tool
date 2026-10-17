@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vpn-tool-cli"  # Change to "vpn-tool" if available on PyPI
+version = "1.0.0"
+description = "VPN Gateway Manager CLI"
+readme = "README.md"
+authors = [
+    { name = "getyu565-cyber", email = "your-email@example.com" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "httpx>=0.20.0",
+    "orjson>=3.0.0"
+]
+
+[project.scripts]
+vpn-tool = "vpn_tool.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/getyu565-cyber/vpn-tool"
+Repository = "https://github.com/getyu565-cyber/vpn-tool.git"

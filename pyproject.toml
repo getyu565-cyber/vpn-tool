@@ -23,8 +23,11 @@ dependencies = [
 ]
 
 [project.scripts]
-vpn-tool = "vpn_tool.cli:main"
+vpn-tool = "vpn_tool:main"
 
 [project.urls]
 Homepage = "https://github.com/getyu565-cyber/vpn-tool"
 Repository = "https://github.com/getyu565-cyber/vpn-tool.git"
+
+[tool.setuptools]
+py-modules = ["vpn_tool"]
